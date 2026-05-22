@@ -1,0 +1,25 @@
+class Patchy < Formula
+  desc "Apache + mod_php dev server for macOS"
+  homepage "https://github.com/joeworkman/patchy"
+  url "https://github.com/joeworkman/patchy/archive/refs/tags/v0.1.0.tar.gz"
+  sha256 "db9a032f57751cabec413b0096051c267ea708f620d11dcfb7969c42865210aa"
+  license "MIT"
+
+  depends_on "hostess"
+  depends_on "httpd"
+  depends_on "jq"
+  depends_on "mkcert"
+  depends_on "php"
+
+  def install
+    bin.install "bin/patchy"
+  end
+
+  def post_install
+    system bin/"patchy", "install"
+  end
+
+  test do
+    assert_match "Patchy", shell_output("#{bin}/patchy help")
+  end
+end
