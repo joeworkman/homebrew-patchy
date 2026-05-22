@@ -2,7 +2,7 @@ class Patchy < Formula
   desc "Apache + mod_php dev server for macOS"
   homepage "https://github.com/joeworkman/patchy"
   url "https://github.com/joeworkman/patchy/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "bac914964056818cad9228547dc80e23690f8219a2758fcd87e9ddf70b616119"
+  sha256 "7a8d9f2f7f59e79de41f242e123e26f7d14e232ca1635947616e2ac52284ecb4"
   license "MIT"
 
   depends_on "hostess"
@@ -16,7 +16,7 @@ class Patchy < Formula
   end
 
   def post_install
-    system bin/"patchy", "install"
+    system bin/"patchy", "setup"
   end
 
   test do
