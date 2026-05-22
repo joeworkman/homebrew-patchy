@@ -1,6 +1,6 @@
 # homebrew-patchy
 
-Homebrew tap for [Patchy](https://github.com/joeworkman/patchy) — a patchy little Apache + PHP dev server for macOS.
+Homebrew tap for [Patchy](https://github.com/joeworkman/patchy) — a patchy little PHP dev server for macOS (running Apache).
 
 ## Install
 
