@@ -1,8 +1,8 @@
 class Patchy < Formula
   desc "Apache + mod_php dev server for macOS"
   homepage "https://github.com/joeworkman/patchy"
-  url "https://github.com/joeworkman/patchy/archive/refs/tags/v0.7.0.tar.gz"
-  sha256 "16fcfe8845327785cc2370aefe933897392a91e992bcf13711b5cb11b79e053d"
+  url "https://github.com/joeworkman/patchy/archive/refs/tags/v0.8.0.tar.gz"
+  sha256 "4f607ac72f06d5b69e551405d25c1f9023c83ec11a1372db8cdc45c887473d1b"
   license "MIT"
 
   depends_on "dnsmasq"
