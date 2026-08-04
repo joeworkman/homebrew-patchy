@@ -5,7 +5,6 @@ class Patchy < Formula
   sha256 "61734c5197c4c26f4004c9f1e6f7b72a1c94248d4864b846eace82905ce26ad3"
   license "MIT"
 
-  depends_on "dnsmasq"
   depends_on "httpd"
   depends_on "jq"
   depends_on "mkcert"
