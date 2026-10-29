@@ -1,3 +1,8 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/joeworkman/patchy/main/assets/logo/patchy-mark-dark.svg">
+  <img src="https://raw.githubusercontent.com/joeworkman/patchy/main/assets/logo/patchy-mark.svg" alt="Patchy logo: a feather sewn from fabric patches" width="120">
+</picture>
+
 # homebrew-patchy
 
 Homebrew tap for [Patchy](https://github.com/joeworkman/patchy) — a patchy little PHP dev server for macOS (running Apache).
