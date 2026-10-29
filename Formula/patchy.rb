@@ -5,6 +5,7 @@ class Patchy < Formula
   sha256 "d574420df5c7d0efa1fda4404041142336293838e8d168dea33e2f3d6f3633bc"
   license "MIT"
 
+  depends_on "cloudflared"
   depends_on "httpd"
   depends_on "jq"
   depends_on "mkcert"
@@ -12,6 +13,7 @@ class Patchy < Formula
 
   def install
     bin.install "bin/patchy"
+    libexec.install Dir["libexec/*"]
   end
 
   def post_install
