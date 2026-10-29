@@ -15,6 +15,11 @@ class Patchy < Formula
     bin.install "bin/patchy"
     libexec.install Dir["libexec/*"]
     doc.install "README.md"
+    # The Alfred workflow ships from v1.4.0; older tarballs don't have it.
+    if File.directory?("alfred")
+      pkgshare.install "alfred"
+      rm_r pkgshare/"alfred/tests"
+    end
   end
 
   def post_install
