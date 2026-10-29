@@ -14,6 +14,7 @@ class Patchy < Formula
   def install
     bin.install "bin/patchy"
     libexec.install Dir["libexec/*"]
+    doc.install "README.md"
   end
 
   def post_install
